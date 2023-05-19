@@ -31,7 +31,7 @@ namespace health_calc_pack_dotnet
 
         public bool IsValidData(double Height, double Weight)
         {
-            return (Height < 3.0 || Weight <= 300);
+            return (Height > 0 && Height < 3.0 && Weight > 0 && Weight <= 300);
         }
     }
 }

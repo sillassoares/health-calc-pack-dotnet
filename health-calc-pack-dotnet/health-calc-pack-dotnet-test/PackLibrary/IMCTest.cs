@@ -62,7 +62,7 @@ namespace health_calc_pack_dotnet_test.PackLibrary
             double result = imc.Calc(height, weight);
 
             // Assert
-            Assert.Equal(22.86, result);
+            Assert.Equal(0, result);
         }
 
         [Fact]
