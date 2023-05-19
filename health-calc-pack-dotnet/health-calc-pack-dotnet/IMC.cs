@@ -11,6 +11,7 @@ namespace health_calc_pack_dotnet
             {
                 return 0;
             }
+
             double calculo = Weight / Math.Pow(Height, 2);
             return Math.Round(calculo,2);
         }
@@ -30,7 +31,7 @@ namespace health_calc_pack_dotnet
 
         public bool IsValidData(double Height, double Weight)
         {
-            return (Height < 3.0 && Weight <= 300);
+            return (Height < 3.0 || Weight <= 300);
         }
     }
 }
